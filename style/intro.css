@@ -1,0 +1,35 @@
+.intro {
+  height: 777px;
+  background: url("../img/bg-intro-1.jpg") no-repeat center center;
+}
+
+.content-intro {
+  padding-top: calc(60px + 128px);
+}
+
+.content-intro h1,
+.content-intro p {
+  color: #f0f4f7;
+}
+.content-intro h1 {
+  font-size: 4.5rem;
+  max-width: 15ch;
+  line-height: 100%;
+}
+
+.content-intro p {
+  max-width: 50ch;
+  margin-top: 1rem;
+}
+
+@media (max-width: 769px) {
+  .content-intro {
+    padding-top: calc(60px + 64px);
+  }
+  .content-intro h1 {
+    font-size: 3.5rem;
+  }
+  .content-intro p {
+    font-size: 0.875rem;
+  }
+}
