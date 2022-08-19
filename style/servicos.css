@@ -1,0 +1,53 @@
+.servicos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.servicos-box {
+  display: flex;
+  gap: 48px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.servicos-box img {
+  border-radius: 4px 0 0 4px;
+}
+
+.servicos-box:nth-child(2) img {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.servicos-box:nth-child(2) {
+  justify-content: flex-end;
+}
+
+.servicos-content {
+  position: relative;
+  left: 0;
+}
+
+.historia-content.servicos-content h2 {
+  justify-content: flex-end;
+}
+.historia-content.servicos-content h2::before {
+  display: none;
+}
+.historia-content.servicos-content h2::after {
+  content: "";
+  display: inline-block;
+  transition: 0.3s;
+  width: 12px;
+  height: 3px;
+  background: #261466;
+  margin-left: 4px;
+}
+.historia-content.servicos-content p {
+  text-align: end;
+}
+
+.historia-content.servicos-content a {
+  right: 0px;
+}
