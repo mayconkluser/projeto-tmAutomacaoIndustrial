@@ -1,6 +1,6 @@
 .parceiros {
   position: relative;
-  top: calc(-128px + 32px);
+  top: calc(-128px + 16px);
 }
 
 .parceiros::after {
