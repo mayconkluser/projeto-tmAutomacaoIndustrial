@@ -1,0 +1,43 @@
+.parceiros {
+  position: relative;
+  top: calc(-128px + 32px);
+}
+
+.parceiros::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: #c3ced9;
+  margin: 64px auto 0 auto;
+}
+
+.parceiros-img {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.parceiros h2 {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parceiros h2::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  margin-left: 4px;
+  background: #261466;
+}
+.parceiros h2::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  margin-right: 4px;
+  background: #261466;
+}
