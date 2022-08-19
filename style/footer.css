@@ -1,0 +1,95 @@
+.footer {
+  width: 100%;
+  background: #161b20;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1050px;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.footer-info nav ul li a {
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 0.875rem;
+  color: #a4b5c6;
+}
+.footer-info nav ul li a:hover {
+  color: #c3ced9;
+}
+
+.footer-endereco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.endereco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.midias h4,
+.endereco h4 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #c3ced9;
+}
+.endereco p {
+  max-width: 40ch;
+  font-size: 0.75rem;
+  color: #a4b5c6;
+}
+.midias h4 {
+  padding: 0 0 8px 0;
+}
+
+.footer-direitos {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-direitos p {
+  font-size: 0.75rem;
+  color: #a4b5c6;
+}
+
+.footer-direitos p a {
+  font-weight: 700;
+  color: #a4b5c6;
+  transition: 0.3s;
+}
+
+.footer-direitos p a:hover {
+  font-weight: 700;
+  color: #c3ced9;
+}
+
+.footer-direitos img {
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-direitos img:hover {
+  background: #2c4661;
+  border-radius: 4px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #2c4661;
+}
