@@ -1,5 +1,5 @@
 .contato {
-  height: 380px;
+  height: 400px;
   background: url("../img/contato.jpg") no-repeat;
   display: flex;
   justify-content: center;
@@ -14,11 +14,13 @@
   padding: 8px;
   font-size: 2rem;
   font-weight: 500;
+  position: relative;
+  top: -20px;
 }
 
 .historia-content.contato-content a {
   position: absolute;
-  bottom: -64px;
+  bottom: -32px;
   left: 128px;
   color: white;
   background: linear-gradient(180deg, #513f94 0%, #3a297b 100%);
