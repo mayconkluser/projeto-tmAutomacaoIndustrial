@@ -6,3 +6,8 @@
 @import "./servicos.css";
 @import "./contato.css";
 @import "./footer.css";
+@import "./sobre/header-sobre.css";
+@import "./sobre/bg-sobre.css";
+@import "./sobre/sobre.css";
+@import "./sobre/politicas-content.css";
+@import "./sobre/produtos.css";

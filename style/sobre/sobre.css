@@ -1,0 +1,87 @@
+.sobre {
+  padding: 64px 0;
+  width: 1056px;
+}
+.sobre h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: #112233;
+  padding-bottom: 32px;
+}
+.sobre h2::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: #261466;
+  margin-right: 4px;
+}
+
+.historia-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  color: #2c4661;
+}
+
+.historia-sobre div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.historia-detalhes {
+  padding-top: 32px;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  justify-content: center;
+  text-align: center;
+  color: #2c4661;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.historia-detalhes img {
+  margin: 0 auto;
+}
+
+.historia-detalhes .valores,
+.historia-detalhes .missao {
+  border-left: 1px solid #c3ced9;
+  padding-left: 16px;
+}
+
+.historia-detalhes .valores h3,
+.historia-detalhes .missao h3,
+.historia-detalhes .visao h3 {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historia-detalhes .valores h3::after,
+.historia-detalhes .missao h3::after,
+.historia-detalhes .visao h3::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 1px;
+  margin: 0 4px;
+  background: #112233;
+}
+.historia-detalhes .valores h3::before,
+.historia-detalhes .missao h3::before,
+.historia-detalhes .visao h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 1px;
+  margin: 0 4px;
+  background: #112233;
+}
