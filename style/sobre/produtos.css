@@ -12,6 +12,7 @@
   gap: 16px;
   background: white;
   align-content: flex-start;
+  border-radius: 0 0 4px 4px;
 }
 
 .produtos-box img {
@@ -31,6 +32,7 @@
   font-weight: 400;
   display: flex;
   align-items: center;
+  color: #112233;
 }
 
 .produtos-content h2::before {
@@ -48,7 +50,7 @@
 }
 
 .produtos-content p {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
   color: #2c4661;
 }
@@ -62,11 +64,12 @@
   font-size: 0.75rem;
   border-radius: 2px;
   border: none;
-  color: #112233;
+  color: #2c4661;
   transition: 0.3s;
   background: linear-gradient(180deg, #c3ced9 0%, #b7c1cc 100%);
 }
 
 .produtos-content a:hover {
+  color: #112233;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
