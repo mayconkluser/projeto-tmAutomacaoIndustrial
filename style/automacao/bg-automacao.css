@@ -1,0 +1,11 @@
+.bg-automacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f0f4f7;
+  width: 100%;
+  height: 400px;
+  background: url("../../img/automacao.jpg") no-repeat;
+}

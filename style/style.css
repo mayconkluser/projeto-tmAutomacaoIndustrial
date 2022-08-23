@@ -11,3 +11,8 @@
 @import "./sobre/sobre.css";
 @import "./sobre/politicas-content.css";
 @import "./sobre/produtos.css";
+@import "./automacao/bg-automacao.css";
+@import "./automacao/automacao-produtos.css";
+@import "./automacao/infraestrutura.css";
+@import "./contato/bg-contato.css";
+@import "./contato/contato-form.css";

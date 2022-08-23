@@ -1,0 +1,15 @@
+.contato-form {
+  display: grid;
+  padding: 64px 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.contato-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contato-form form input {
+  width: 100%;
+}
