@@ -11,9 +11,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
-.historia img {
+.img-simples {
   border-radius: 4px 0 0 4px;
   width: 50%;
+}
+
+.img-simples img {
+  max-width: 100%;
+  display: block;
 }
 
 .historia-content {
@@ -57,9 +62,9 @@
   padding-right: 20px;
 }
 
-.historia a {
+.btn-simples {
   justify-self: left;
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 32px;
   padding: 8px 16px;
   text-transform: uppercase;
@@ -109,7 +114,7 @@
     margin-top: 16px;
     justify-self: flex-start;
   }
-  .historia img {
+  .img-simples {
     width: 90%;
     margin: -128px auto 0 auto;
     border-radius: 4px 4px 4px 4px;
