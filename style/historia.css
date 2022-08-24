@@ -3,8 +3,7 @@
 }
 
 .historia {
-  position: relative;
-  top: -128px;
+  margin-top: -128px;
   display: flex;
   gap: 48px;
   background: #fff;
@@ -14,18 +13,22 @@
 
 .historia img {
   border-radius: 4px 0 0 4px;
+  width: 50%;
 }
 
 .historia-content {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-content: flex-start;
 }
 
 .historia-content h2 {
-  padding-top: 2rem;
   color: #112233;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 
 .historia-content h2::before {
@@ -48,15 +51,16 @@
 }
 
 .historia-content p {
-  max-width: 48ch;
-  padding-top: 1rem;
+  max-width: 50ch;
   line-height: 1.5;
   color: #2c4661;
+  padding-right: 20px;
 }
 
-.historia-content a {
-  position: absolute;
-  bottom: 32px;
+.historia a {
+  justify-self: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
   padding: 8px 16px;
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -70,4 +74,44 @@
 
 .historia-content a:hover {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 769px) {
+  .historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .historia-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .historia-content h2 {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .historia-content p {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .historia-content h2::before {
+    display: none;
+  }
+
+  .historia-content a {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 16px;
+    justify-self: flex-start;
+  }
+  .historia img {
+    width: 90%;
+    margin: -128px auto 0 auto;
+    border-radius: 4px 4px 4px 4px;
+  }
 }
