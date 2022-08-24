@@ -1,25 +1,21 @@
-.parceiros {
-  position: relative;
-  top: calc(-128px + 16px);
-}
-
 .parceiros::after {
   content: "";
   display: block;
   width: 90%;
   height: 1px;
   background: #c3ced9;
-  margin: 64px auto 0 auto;
+  margin: 32px auto 32px auto;
 }
 
 .parceiros-img {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .parceiros h2 {
-  padding: 32px;
+  padding: 32px 0 16px 0;
   display: flex;
   align-items: center;
   justify-content: center;
