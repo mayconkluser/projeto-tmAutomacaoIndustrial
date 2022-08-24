@@ -3,6 +3,7 @@
   padding: 64px 0;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  align-items: center;
 }
 
 .contato-form form {
@@ -10,6 +11,85 @@
   flex-wrap: wrap;
 }
 
+.contato-form form label {
+  color: #2c4661;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  font-size: 0.875rem;
+}
+
+.contato-form form label:nth-child(1) {
+  padding-top: 0;
+}
+
+.contato-form form input {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.875rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 .contato-form form input {
   width: 100%;
+}
+.contato-form form textarea {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.875rem;
+  width: 100%;
+  resize: vertical;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #a4b5c6;
+}
+
+.contato-form form button.btn {
+  margin-top: 0;
+}
+
+.contanto-info:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  top: -90px;
+  left: 16px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.contanto-info {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  position: relative;
+}
+
+.contanto-info h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #a4b5c6;
+  margin-bottom: 4px;
+}
+
+.contanto-info a {
+  font-size: 1.875rem;
+  color: #112233;
+  font-weight: 700;
+}
+
+.contanto-info p {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #112233;
+  font-weight: 500;
+  line-height: 1.4;
 }
