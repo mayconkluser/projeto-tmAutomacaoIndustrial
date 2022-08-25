@@ -12,13 +12,13 @@
 }
 
 .img-simples {
-  border-radius: 4px 0 0 4px;
   width: 50%;
 }
 
 .img-simples img {
   max-width: 100%;
   display: block;
+  border-radius: 4px 0 0 4px;
 }
 
 .historia-content {
@@ -81,11 +81,35 @@
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 910px) {
+  .historia-content p {
+    font-size: 0.875rem;
+  }
+  .historia-content h2 {
+    font-size: 1.2rem;
+  }
+  .historia-content {
+    gap: 8px;
+  }
+
+  .btn-simples {
+    padding: 6px 12px;
+    font-size: 0.625rem;
+    margin-bottom: 0px;
+  }
+  .historia {
+    gap: 32px;
+  }
+}
+
 @media (max-width: 769px) {
   .historia {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  .btn-simples {
+    margin-bottom: 32px;
   }
 
   .historia-content {
@@ -97,11 +121,13 @@
   .historia-content h2 {
     margin: 0;
     padding: 0 20px;
+    font-size: 1.5rem;
   }
 
   .historia-content p {
     max-width: 100%;
     padding: 0 20px;
+    font-size: 0.875rem;
   }
 
   .historia-content h2::before {
@@ -113,10 +139,20 @@
     margin-left: 20px;
     margin-top: 16px;
     justify-self: flex-start;
+    font-size: 0.75rem;
   }
   .img-simples {
-    width: 90%;
+    width: 80%;
     margin: -128px auto 0 auto;
+  }
+
+  .img-simples img {
     border-radius: 4px 4px 4px 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-simples {
+    width: 90%;
   }
 }

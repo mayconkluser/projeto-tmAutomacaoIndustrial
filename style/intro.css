@@ -24,7 +24,7 @@
 
 @media (max-width: 769px) {
   .content-intro {
-    padding-top: calc(60px + 64px);
+    padding-top: calc(80px + 64px);
   }
   .content-intro h1 {
     font-size: 3.5rem;

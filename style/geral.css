@@ -8,6 +8,7 @@
 body,
 html {
   background: #f0f4f7;
+  scroll-behavior: smooth;
 }
 
 .container {

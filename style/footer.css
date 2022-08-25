@@ -9,16 +9,19 @@
   max-width: 1050px;
   gap: 32px;
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 32px 20px;
 }
 
 .footer-info nav ul li a {
   cursor: pointer;
-  padding: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 5px;
   display: block;
   font-size: 0.875rem;
   color: #a4b5c6;
+  text-transform: uppercase;
 }
 .footer-info nav ul li a:hover {
   color: #c3ced9;
@@ -28,6 +31,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+}
+
+.midia-img {
+  width: 40px;
 }
 
 .endereco {
@@ -55,14 +62,16 @@
 .footer-direitos {
   max-width: 1050px;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-direitos p {
+  line-height: 1.5;
   font-size: 0.75rem;
+  max-width: 46ch;
   color: #a4b5c6;
 }
 
@@ -76,20 +85,82 @@
   font-weight: 700;
   color: #c3ced9;
 }
-
-.footer-direitos img {
-  padding: 12px;
-  cursor: pointer;
+.footer-direitos button {
+  border: none;
+  border-radius: 50%;
   transition: 0.3s;
+  background: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-direitos img {
+  padding: 16px;
+  cursor: pointer;
 }
 
-.footer-direitos img:hover {
+.footer-direitos button:hover {
   background: #2c4661;
-  border-radius: 4px;
 }
 
 .line {
   height: 1px;
   width: 100%;
   background: #2c4661;
+}
+
+@media (max-width: 769px) {
+  .footer-info {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .footer-info ul {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+    font-weight: 700;
+  }
+  .footer-info nav ul li a {
+    font-size: 1rem;
+    margin: 0 10px 0 0;
+  }
+
+  .footer-endereco {
+    gap: 16px;
+    grid-column: 2;
+  }
+
+  .midias h4,
+  .endereco h4 {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-img-logo {
+    width: 100%;
+  }
+  .footer-img-logo img {
+    max-width: 100%;
+    display: block;
+  }
+  .midias h4,
+  .endereco h4 {
+    width: 100%;
+  }
+  .endereco {
+    display: block;
+    width: 100%;
+  }
 }

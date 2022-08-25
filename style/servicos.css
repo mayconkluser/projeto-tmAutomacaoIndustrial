@@ -5,12 +5,8 @@
   margin-bottom: 64px;
 }
 
-.servicos-box {
-  display: flex;
-  gap: 48px;
-  background: #fff;
-  border-radius: 2px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+.servicos-box.historia {
+  margin-top: 0;
 }
 
 .servicos-box img {
@@ -23,11 +19,6 @@
 
 .servicos-box:nth-child(2) {
   justify-content: flex-end;
-}
-
-.servicos-content {
-  position: relative;
-  left: 0;
 }
 
 .historia-content.servicos-content h2 {
@@ -47,8 +38,81 @@
 }
 .historia-content.servicos-content p {
   text-align: end;
+  padding-right: 0;
+  padding-left: 20px;
 }
 
-.historia-content.servicos-content a {
-  right: 0px;
+.btn-simples.btn-meio {
+  justify-self: flex-end;
+}
+
+@media (max-width: 769px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .servicos-box.historia .img-simples {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .servicos-box.historia:nth-child(2) .img-simples {
+    grid-row: 1;
+  }
+
+  .servicos-box.historia:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .servicos-box.historia:nth-child(3) .img-simples img {
+    margin: 32px auto 0 auto;
+  }
+
+  .historia-content.servicos-content p {
+    text-align: start;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .historia-content.servicos-content h2::after {
+    display: none;
+  }
+
+  .historia-content.servicos-content h2 {
+    justify-content: flex-start;
+  }
+
+  .historia-content.servicos-content .btn-simples.btn-meio {
+    justify-self: flex-start;
+  }
+
+  .servicos-box img {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .servicos-box:nth-child(2) img {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .servicos-box:nth-child(3) img {
+    border-radius: 4px 4px 4px 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .servicos-box.historia:nth-child(3) .img-simples img {
+    margin: 0px auto 0 auto;
+  }
+  .servicos-box:nth-child(3) img {
+    border-radius: 4px 4px 0px 0px;
+  }
 }
