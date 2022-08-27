@@ -9,3 +9,11 @@
   height: 400px;
   background: url("../../img/sobre.jpg") no-repeat center center;
 }
+
+@media (max-width: 769px) {
+  .bg-sobre {
+    font-size: 3rem;
+    height: 350px;
+    background: url("../../img/sobre.jpg") no-repeat -510px 0;
+  }
+}

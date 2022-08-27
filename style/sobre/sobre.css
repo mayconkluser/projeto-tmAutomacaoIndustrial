@@ -1,6 +1,5 @@
 .sobre {
-  padding: 64px 0;
-  width: 1056px;
+  padding: 64px 20px;
 }
 .sobre h2 {
   font-size: 2rem;
@@ -20,8 +19,7 @@
 }
 
 .historia-sobre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 32px;
   color: #2c4661;
 }
@@ -84,4 +82,42 @@
   height: 1px;
   margin: 0 4px;
   background: #112233;
+}
+
+@media (max-width: 769px) {
+  .historia-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .sobre {
+    padding: 32px 64px;
+  }
+
+  .historia-detalhes {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 16px;
+  }
+
+  .valores {
+    margin-top: 16px;
+    grid-column: 1/ -1;
+  }
+  .historia-detalhes .valores {
+    border-left: none;
+    border-top: 1px solid #c3ced9;
+    padding: 16px;
+  }
+
+  .sobre h2 {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre {
+    padding: 32px 20px;
+  }
 }
