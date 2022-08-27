@@ -58,6 +58,7 @@
   .nav {
     transition: 0.3s;
   }
+
   .ul-menu {
     display: none;
   }
@@ -93,12 +94,12 @@
   [data-menu="btnMenu"] {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 10px;
     display: block;
     cursor: pointer;
     z-index: 9999;
     background: none;
-    padding: 10px;
+    padding: 20px;
     border: none;
   }
   [data-menu="btnMenu"]::after {

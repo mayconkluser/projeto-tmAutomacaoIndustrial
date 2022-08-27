@@ -148,6 +148,10 @@
     gap: 24px;
   }
 
+  .footer-info ul {
+    flex-wrap: wrap;
+  }
+
   .footer-img-logo {
     width: 100%;
   }
