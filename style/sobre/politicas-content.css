@@ -135,3 +135,22 @@
     padding: 64px 20px 80px 20px;
   }
 }
+
+@media (max-width: 500px) {
+  .politicas {
+    background: url("../../img/bg-politica.jpg") no-repeat -200px 0;
+    padding: 0 20px;
+  }
+  .politicas-content h2 {
+    font-size: 1.125rem;
+    padding-bottom: 12px;
+  }
+  .politicas-content p {
+    font-size: 0.75rem;
+  }
+  .politicas .container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 10px 48px 10px;
+  }
+}

@@ -121,3 +121,19 @@
     padding: 32px 20px;
   }
 }
+
+@media (max-width: 500px) {
+  .historia-detalhes {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .valores {
+    margin-top: 0px;
+  }
+  .historia-detalhes .valores,
+  .historia-detalhes .missao {
+    border-left: none;
+    border-top: none;
+    padding-left: 0;
+  }
+}
