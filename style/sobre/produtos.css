@@ -82,25 +82,12 @@
     border-radius: 4px 4px 4px 4px;
     grid-column: 1/-1;
   }
-  .produtos-box:nth-child(3) .img-simgle {
-    border-radius: 4px 4px 4px 4px;
-    margin: 16px auto 0 auto;
-  }
-  .produtos-box:nth-child(3) .img-simgle img {
-    border-radius: 4px 4px 4px 4px;
-  }
 }
 
 @media (max-width: 700px) {
   .produtos-sobre .produto {
     gap: 16px;
     grid-template-columns: 1fr;
-  }
-  .produtos-box .img-simgle {
-    margin: 16px auto 0 auto;
-  }
-  .produtos-box .img-simgle img {
-    border-radius: 4px 4px 4px 4px;
   }
 }
 
