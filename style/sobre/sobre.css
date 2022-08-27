@@ -85,6 +85,9 @@
 }
 
 @media (max-width: 769px) {
+  .sobre h2::before {
+    display: none;
+  }
   .historia-sobre {
     display: flex;
     flex-wrap: wrap;
