@@ -1,8 +1,8 @@
-.automacao-produtos {
+.automacao-produtos.container {
   display: grid;
   grid-template-columns: calc(284px + 64px) 1fr;
   margin: 0 auto;
-  width: 100%;
+  max-width: 1280px;
 }
 
 .automacao-produtos-lista {
@@ -15,7 +15,6 @@
 
 .automacao-produtos-lista li {
   display: flex;
-  width: 150px;
   height: 50px;
   background: red;
   font-size: 0.625rem;
@@ -30,34 +29,71 @@
   color: #fff;
 }
 
+.automacao-produtos-lista li.active {
+  background: blue;
+}
+
 .automacao-produtos-lista li:hover {
   background: blue;
 }
 
-.automacao-produtos-section {
-  display: flex;
+.js [data-tab="content"] .automacao-produtos-section {
+  display: none;
   flex-wrap: wrap;
   width: 100%;
-  gap: 16px;
+  gap: 32px;
   align-content: flex-start;
   font-size: 0.75rem;
   line-height: 1.5;
   background: #fff;
-  padding-top: 16px;
+  padding: 16px;
   margin-bottom: 64px;
-  justify-content: center;
   border-radius: 4px;
+  height: calc(100% - 64px);
+  justify-content: space-evenly;
 }
+
+.js [data-tab="content"] .automacao-produtos-section.active {
+  display: flex;
+  animation: mostrar 0.6s forwards;
+}
+
+@keyframes mostrar {
+  from {
+    transform: translate3d(-30px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/* .automacao-produtos-box + .automacao-produtos-box {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 16px;
+} */
 
 .automacao-produtos-box {
-  max-width: 200px;
-  text-align: center;
-}
-.automacao-produtos-box + .automacao-produtos-box {
-  border-left: 1px solid rebeccapurple;
-  padding-left: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 4px;
+  align-self: flex-start;
 }
 
-.automacao-produtos-box-content {
+.automacao-produtos-box-content li {
+  list-style: square;
+  margin-left: 14px;
+  margin-top: 4px;
+  min-width: 100%;
+}
+.automacao-produtos-box-content-img {
   display: flex;
+  gap: 32px;
+}
+
+.automacao-produtos-box-content img {
+  max-width: 360px;
+  margin-top: 32px;
+  border-radius: 4px;
 }

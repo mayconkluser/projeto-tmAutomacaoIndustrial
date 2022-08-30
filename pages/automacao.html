@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automação | TM Automação Industrial</title>
+
+  <!-- script debugger js -->
+  <script>
+    document.documentElement.className += ' js'
+  </script>
+
   <!-- style -->
   <link rel="stylesheet" href="../style/style.css">
 
@@ -13,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -65,155 +72,125 @@
   </section>
 
   <section class="automacao-produtos container">
-    <ul class="automacao-produtos-lista">
-      <li>MÁQUINAS ESPECIAIS</li>
+    <ul class="automacao-produtos-lista" data-tab="menu">
       <li>DISPOSITIVOS DE SOLDA</li>
-      <li>SIMULADOR 3D</li>
+      <li>MÁQUINAS ESPECIAIS</li>
+      <li>ESTANQUEIDADE</li>
       <li>SUPERVISÓRIO</li>
       <li>AGV / LGV</li>
       <li>PRENSAS</li>
-      <li>ESTANQUEIDADE</li>
       <li>AUTOMAÇÃO</li>
       <li>LINHAS DE MONTAGEM</li>
       <li>ESTEIRAS</li>
       <li>RETROFITTING</li>
       <li>ROBÔS</li>
+      <li>SIMULADOR 3D</li>
     </ul>
 
-    <section class="automacao-produtos-section ">
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div data-tab="content">
+      <section class="automacao-produtos-section">
+        <div class="automacao-produtos-box">
+          <h3>Célula de Solda Robotizado</h3>
+          <div class="automacao-produtos-box-content">
+            <ul>
+              <li>Célula composta de 05 robôs integrados com CLP;</li>
+              <li>Célula controlada por CLP, comunicação profibus e rede ASI;</li>
+              <li>Monitoramento e controle do arco de solda;</li>
+              <li>Tempo de ciclo: 8 seg.;</li>
+              <li>Dispositivo controlado através de eixos externos do robô;</li>
+              <li>Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
+              <li>Solda com duplo arame.</li>
+            </ul>
+            <div class="automacao-produtos-box-content-img">
+              <img src="../img/solda1.jpg" alt=""> <img src="../img/solda2.jpg" alt="">
+            </div>
 
-    <!-- <section class="automacao-produtos-section ">
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
+          </div>
         </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
 
-    <!-- <section class="automacao-produtos-section ">
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
+      </section>
+
+      <section class="automacao-produtos-section ">
+        <div class="automacao-produtos-box">
+          <h3>Alimentador Automático De Eixos</h3>
+          <div class="automacao-produtos-box-content">
+            <ul>
+              <li>Alimentador controlado por CLP com IHM;</li>
+              <li>Pulmão com capacidade para 3.000 peças;</li>
+              <li>Produtividade: 940 peças/hora;</li>
+              <li>Dimensões: 1.000 x 800 x 1.900 mm;</li>
+              <li>Capacidade de localização e alinhamento dos eixos.</li>
+            </ul>
+            <img src="../img/MaQUINASESPECIAIS1.jpg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
+        <div class="automacao-produtos-box">
+          <h3>Fresadora</h3>
+          <div class="automacao-produtos-box-content">
+            <ul>
+              <li>Fresadora mini CNC;</li>
+              <li>Controlada por CNC de 02 eixos;</li>
+              <li>Controle de rotação no eixo arvore;</li>
+              <li>Motorização servo-acionada;</li>
+              <li>Guias lineares com folga zero;</li>
+              <li>Precisão de usinagem 0,003mm;</li>
+              <li>Fixação do produto por morsa com fechamento automático;</li>
+            </ul>
+            <img src="../img/MaQUINASESPECIAIS2.jpg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="automacao-produtos-box">
-        <h3>Célula de Solda Robotizado</h3>
-        <div class="automacao-produtos-box-content">
-          <ul>
-            <li>- Célula composta de 05 robôs integrados com CLP;</li>
-            <li>- Célula controlada por CLP, comunicação profibus e rede ASI;</li>
-            <li>- Monitoramento e controle do arco de solda;</li>
-            <li>- Tempo de ciclo: 8 seg.;</li>
-            <li>- Dispositivo controlado através de eixos externos do robô;</li>
-            <li>- Dimensões da célula: 10:000 x 7.000 x 4.000 mm;</li>
-            <li>- Solda com duplo arame.</li>
-          </ul>
+      </section>
+
+      <section class="automacao-produtos-section ">
+        <div class="automacao-produtos-box">
+          <h3>Teste de Estanqueidade</h3>
+          <div class="automacao-produtos-box-content">
+            <ul>
+              <li>Estanqueidade com acionamento pneumático ou hidráulico;</li>
+              <li>Estrutura tipo Pórtico, C ou coluna;</li>
+              <li>Controles de câmeras independentes com pressão diferenciadas;</li>
+              <li>Controle de força de vedações/bujões;</li>
+              <li>Controle eletrônico ATEQ ou TEX com estabilização de pressão;</li>
+              <li>Opcional sistema visual através de tanque de água;</li>
+              <li>Segurança através de barreira óptica;</li>
+            </ul>
+            <div class="automacao-produtos-box-content-img">
+              <img src="../img/estanqueidade2.jpg" alt=""> <img src="../img/estanqueidade2-2.jpg" alt="">
+            </div>
+            <div class="automacao-produtos-box-content-img">
+              <img src="../img/estanqueidade1.jpg" alt=""> <img src="../img/estanqueidade1-1.jpg" alt="">
+            </div>
+          </div>
         </div>
-      </div>
-    </section> -->
+
+      </section>
+
+      <section class="automacao-produtos-section ">
+        <div class="automacao-produtos-box">
+          <h3>Supervisórios</h3>
+          <div class="automacao-produtos-box-content">
+            <h4>Estes sistemas podem assumir topologia dedicada a cada produto ou cliente com diferentes protocolos de
+              comunicação, como:</h4>
+            <ul>
+              <li>Dispositivos CLP`s, com módulos de entradas/saídas remotas, registradores;</li>
+              <li>Scanner;</li>
+              <li>Controles de câmeras independentes com pressão diferenciadas;</li>
+              <li>Câmaras de visão;</li>
+              <li>Leitor de código de barras;</li>
+              <li>PCs;</li>
+              <li>Periféricos como Balanças, parafusadeiras de torque, dosadoras de óleo;</li>
+              <li>Equipamentos- máquinas e linhas de produção monitoradas;</li>
+            </ul>
+            <div class="automacao-produtos-box-content-img">
+              <img src="../img/SUPERVISÓRIO1.jpg" alt=""> <img src="../img/SUPERVISÓRIO2.jpg" alt="">
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+    </div>
   </section>
 
   <section class="infraestrutura container">
@@ -326,7 +303,7 @@
     <div class="line"></div>
     <div class="footer-direitos">
       <p>TM Automação Industrial © Todos os direitos reservados. / Desenvolvido por <a href="#">Looma Code</a></p>
-      <img src="../img/icons/seta-cima.svg" alt="">
+      <button data-footer="top"><img src="../img/icons/seta-cima.svg" alt=""></button>
     </div>
   </footer>
 
