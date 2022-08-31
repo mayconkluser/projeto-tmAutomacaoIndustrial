@@ -5,6 +5,10 @@
   max-width: 1280px;
 }
 
+.sobre.container.produtos {
+  padding: 0 20px;
+}
+
 .automacao-produtos-lista {
   display: grid;
   grid-template-columns: 150px 150px;
@@ -17,7 +21,7 @@
   display: flex;
   height: 50px;
   background: red;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -81,11 +85,34 @@
   align-self: flex-start;
 }
 
+.automacao-produtos-box h3 {
+  font-size: 1.125rem;
+  color: #0b0d0f;
+}
+
+.automacao-produtos-box-content h4 {
+  color: #2c4661;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
 .automacao-produtos-box-content li {
-  list-style: square;
+  font-size: 0.875rem;
+  display: flex;
   margin-left: 14px;
   margin-top: 4px;
   min-width: 100%;
+  align-items: center;
+  color: #2c4661;
+}
+
+.automacao-produtos-box-content li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  margin-right: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .automacao-produtos-box-content-img {
   display: flex;
@@ -100,4 +127,53 @@
 .automacao-produtos-box-content iframe {
   margin: 32px auto 0 auto;
   border-radius: 4px;
+}
+
+.automacao-produtos-box-content-simulador3D p {
+  margin-top: 8px;
+  color: #2c4661;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 1210px) {
+  .automacao-produtos.container {
+    grid-template-columns: 1fr;
+  }
+  .automacao-produtos-lista {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .automacao-produtos-lista {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 32px;
+  }
+  .automacao-produtos-box-content-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .js [data-tab="content"] .automacao-produtos-section {
+    margin-bottom: 32px;
+    height: calc(100% - 32px);
+  }
+}
+
+@media (max-width: 500px) {
+  .automacao-produtos-lista {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 32px;
+  }
+  .automacao-produtos-box-content-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .automacao-produtos-box-content img {
+    max-width: 250px;
+  }
 }
