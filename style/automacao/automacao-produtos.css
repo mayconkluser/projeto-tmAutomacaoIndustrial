@@ -94,6 +94,10 @@
 
 .automacao-produtos-box-content img {
   max-width: 360px;
-  margin-top: 32px;
+  margin: 32px auto 0 auto;
+  border-radius: 4px;
+}
+.automacao-produtos-box-content iframe {
+  margin: 32px auto 0 auto;
   border-radius: 4px;
 }
