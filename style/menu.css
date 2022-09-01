@@ -94,7 +94,7 @@
   [data-menu="btnMenu"] {
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 8px;
     display: block;
     cursor: pointer;
     z-index: 9999;
