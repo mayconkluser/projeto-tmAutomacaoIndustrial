@@ -21,8 +21,9 @@
 }
 
 .politicas-content h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   display: flex;
   align-items: center;
   color: #112233;
@@ -33,7 +34,7 @@
   content: "";
   display: inline-block;
   width: 12px;
-  height: 2px;
+  height: 4px;
   background: #261466;
   margin-right: 4px;
 }
@@ -53,13 +54,14 @@
   padding: 8px 24px;
   margin-top: 16px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   font-size: 0.75rem;
   border-radius: 2px;
   border: none;
-  color: white;
+  color: #f0f4f7;
   transition: 0.3s;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(180deg, #513f94 0%, #3a297b 100%);
 }
 

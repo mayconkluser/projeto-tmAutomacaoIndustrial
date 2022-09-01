@@ -3,17 +3,18 @@
 }
 .sobre h2 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   display: flex;
   align-items: center;
   color: #112233;
   padding-bottom: 32px;
+  font-family: "Montserrat", sans-serif;
 }
 .sobre h2::before {
   content: "";
   display: inline-block;
   width: 12px;
-  height: 2px;
+  height: 4px;
   background: #261466;
   margin-right: 4px;
 }
@@ -60,6 +61,7 @@
   padding: 12px 0;
   display: flex;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
   justify-content: center;
 }
 
@@ -69,7 +71,7 @@
   content: "";
   display: inline-block;
   width: 12px;
-  height: 1px;
+  height: 2px;
   margin: 0 4px;
   background: #112233;
 }
@@ -79,7 +81,7 @@
   content: "";
   display: inline-block;
   width: 12px;
-  height: 1px;
+  height: 2px;
   margin: 0 4px;
   background: #112233;
 }
