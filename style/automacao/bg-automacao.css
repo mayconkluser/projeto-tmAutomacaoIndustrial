@@ -7,5 +7,11 @@
   color: #f0f4f7;
   width: 100%;
   height: 400px;
-  background: url("../../img/automacao.jpg") no-repeat;
+  background: url("../../img/bg-automacao2500.jpg") no-repeat;
+}
+
+@media (max-width: 769px) {
+  .bg-automacao {
+    background: url("../../img/bg-automacao2500.jpg") no-repeat top 0 right -1500px;
+  }
 }
