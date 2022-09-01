@@ -84,19 +84,7 @@
   background: #112233;
 }
 
-@media (max-width: 769px) {
-  .sobre h2::before {
-    display: none;
-  }
-  .historia-sobre {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .sobre {
-    padding: 32px 20px;
-  }
-
+@media (max-width: 1080px) {
   .historia-detalhes {
     gap: 16px;
     display: grid;
@@ -112,6 +100,20 @@
     border-left: none;
     border-top: 1px solid #c3ced9;
     padding: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .sobre h2::before {
+    display: none;
+  }
+  .historia-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .sobre {
+    padding: 32px 20px;
   }
 
   .sobre h2 {

@@ -1,5 +1,5 @@
 .bg-sobre {
-  background: url("../../img/sobre.jpg") no-repeat center center;
+  background: url("../../img/sobre.jpg") no-repeat 0 0px;
 }
 
 @media (max-width: 769px) {
