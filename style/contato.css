@@ -1,6 +1,6 @@
 .contato {
-  height: 350px;
-  background: url("../img/contato-home.jpg") no-repeat;
+  height: 450px;
+  background: url("../img/bg-contato2500.jpg") no-repeat center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,13 +21,14 @@
   padding: 8px 24px;
   border-radius: 4px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   background: linear-gradient(180deg, #513f94 0%, #3a297b 100%);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1590px) {
   .contato {
-    background: url("../img/contato-home.jpg") no-repeat -500px 0px;
+    background: url("../img/bg-contato.jpg") no-repeat center center;
   }
 }
