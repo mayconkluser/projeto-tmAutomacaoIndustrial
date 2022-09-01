@@ -40,7 +40,6 @@
 .endereco {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
   font-weight: 400;
 }
 
@@ -49,14 +48,12 @@
   font-weight: 500;
   font-size: 0.875rem;
   color: #c3ced9;
+  margin-bottom: 8px;
 }
 .endereco p {
   max-width: 40ch;
   font-size: 0.75rem;
   color: #a4b5c6;
-}
-.midias h4 {
-  padding: 0 0 8px 0;
 }
 
 .footer-direitos {
@@ -125,7 +122,7 @@
     font-weight: 700;
   }
   .footer-info nav ul li a {
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin: 0 10px 0 0;
   }
 

@@ -20,7 +20,7 @@
 .automacao-produtos-lista li {
   display: flex;
   height: 50px;
-  background: red;
+  background: #2b4661;
   font-size: 0.75rem;
   justify-content: center;
   align-items: center;
@@ -34,11 +34,11 @@
 }
 
 .automacao-produtos-lista li.active {
-  background: blue;
+  background: #161b20;
 }
 
 .automacao-produtos-lista li:hover {
-  background: blue;
+  background: #161b20;
 }
 
 .js [data-tab="content"] .automacao-produtos-section {
