@@ -1,9 +1,9 @@
 .bg-sobre {
-  background: url("../../img/sobre.jpg") no-repeat 0 0px;
+  background: url("../../img/sobre2500.jpg") no-repeat center -100px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1590px) {
   .bg-sobre {
-    background: url("../../img/sobre.jpg") no-repeat -510px 0;
+    background: url("../../img/sobre.jpg") no-repeat center -100px;
   }
 }
