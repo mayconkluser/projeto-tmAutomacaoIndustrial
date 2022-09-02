@@ -20,6 +20,7 @@
 .content-intro p {
   max-width: 74ch;
   margin-top: 8px;
+  margin-bottom: 32px;
   font-weight: 500;
   line-height: 1.2;
   font-size: 1.125rem;
@@ -31,6 +32,9 @@
   }
 }
 @media (max-width: 769px) {
+  .display-none {
+    display: none;
+  }
   .content-intro {
     padding-top: 64px;
   }

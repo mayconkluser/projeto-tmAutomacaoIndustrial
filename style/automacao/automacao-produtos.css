@@ -123,6 +123,7 @@
   max-width: 360px;
   margin: 32px auto 0 auto;
   border-radius: 4px;
+  align-self: flex-start;
 }
 .automacao-produtos-box-content iframe {
   margin: 32px auto 0 auto;
