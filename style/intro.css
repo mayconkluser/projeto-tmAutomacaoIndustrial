@@ -36,7 +36,7 @@
     display: none;
   }
   .content-intro {
-    padding-top: 64px;
+    padding-top: calc(60px + 64px);
   }
   .content-intro h1 {
     font-size: 2.5rem;
@@ -47,5 +47,11 @@
   .intro {
     height: 600px;
     background: url("../img/bg-intro.jpg") no-repeat center right -260px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-intro {
+    padding-top: calc(60px + 16px);
   }
 }
