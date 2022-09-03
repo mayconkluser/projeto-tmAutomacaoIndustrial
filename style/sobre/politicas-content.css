@@ -49,24 +49,7 @@
 }
 
 .politicas-content a {
-  position: relative;
   display: inline-block;
-  padding: 8px 24px;
-  margin-top: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 0.75rem;
-  border-radius: 2px;
-  border: none;
-  color: #f0f4f7;
-  transition: 0.3s;
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, #513f94 0%, #3a297b 100%);
-}
-
-.politicas-content a:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1200px) {
@@ -74,9 +57,6 @@
     padding-bottom: 16px;
   }
 
-  .politicas-content a {
-    text-transform: uppercase;
-  }
   .politicas .container {
     grid-template-columns: 1fr;
     gap: 32px;
