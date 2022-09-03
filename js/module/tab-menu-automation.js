@@ -1,5 +1,5 @@
 export default function initTabMenuAutomation() {
-  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+  const tabMenu = document.querySelectorAll('[data-tab="menu"] li a');
   const tabContent = document.querySelectorAll('[data-tab="content"] section');
   const active = "active";
 
@@ -7,7 +7,7 @@ export default function initTabMenuAutomation() {
     tabContent[0].classList.add(active);
     tabMenu[0].classList.add(active);
 
-    function activeTab(index) {
+    function activeTab(index, event) {
       tabContent.forEach((item) => {
         item.classList.remove(active);
       });

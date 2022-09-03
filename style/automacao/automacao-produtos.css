@@ -17,7 +17,7 @@
   margin-bottom: 64px;
 }
 
-.automacao-produtos-lista li {
+.automacao-produtos-lista li a {
   display: flex;
   height: 50px;
   background: #2b4661;
@@ -30,10 +30,11 @@
   transition: 0.3s;
   font-weight: 700;
   line-height: 1.5;
+  padding: 10px;
   color: #fff;
 }
 
-.automacao-produtos-lista li.active {
+.automacao-produtos-lista li a.active {
   background: #161b20;
 }
 
