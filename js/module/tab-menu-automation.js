@@ -1,6 +1,7 @@
 export default function initTabMenuAutomation() {
   const tabMenu = document.querySelectorAll('[data-tab="menu"] li a');
   const tabContent = document.querySelectorAll('[data-tab="content"] section');
+  const tabTitle = document.querySelectorAll('[data-tab="title] li h2');
   const active = "active";
 
   if (tabMenu.length && tabContent.length) {
@@ -14,6 +15,7 @@ export default function initTabMenuAutomation() {
       tabMenu.forEach((item) => {
         item.classList.remove(active);
       });
+
       tabMenu[index].classList.add(active);
       tabContent[index].classList.add(active);
     }

@@ -51,7 +51,6 @@
   font-size: 0.75rem;
   line-height: 1.5;
   background: #fff;
-  padding: 16px;
   margin-bottom: 64px;
   border-radius: 4px;
   height: calc(100% - 64px);
@@ -137,13 +136,29 @@
   font-size: 0.875rem;
 }
 
+[data-tab="title"] {
+  display: none;
+}
+
 @media (max-width: 1210px) {
   .automacao-produtos.container {
     grid-template-columns: 1fr;
   }
   .automacao-produtos-lista {
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 32px;
+    margin-bottom: 74px;
+  }
+  .automacao-produtos-section {
+    position: relative;
+  }
+
+  [data-tab="title"] {
+    display: block;
+    position: absolute;
+    top: -45px;
+    left: 00px;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
   }
 }
 @media (max-width: 900px) {
@@ -168,14 +183,14 @@
 @media (max-width: 500px) {
   .automacao-produtos-lista {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 32px;
+    margin-bottom: 74px;
   }
   .automacao-produtos-box-content-img {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 0px;
   }
   .automacao-produtos-box-content img {
-    max-width: 250px;
+    max-width: 100%;
   }
 }
