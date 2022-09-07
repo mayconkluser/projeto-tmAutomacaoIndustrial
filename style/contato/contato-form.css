@@ -1,6 +1,6 @@
 .contato-form {
   display: grid;
-  padding: 64px 0;
+  padding: 64px 20px;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: center;
@@ -16,6 +16,7 @@
   padding-top: 16px;
   padding-bottom: 4px;
   font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .contato-form form label:nth-child(1) {
@@ -23,11 +24,10 @@
 }
 
 .contato-form form input {
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 8px;
   font-size: 0.875rem;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .contato-form form input {
@@ -40,7 +40,7 @@
   font-size: 0.875rem;
   width: 100%;
   resize: vertical;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 16px;
 }
 
@@ -92,4 +92,44 @@ textarea:focus {
   color: #112233;
   font-weight: 500;
   line-height: 1.4;
+}
+
+@media (max-width: 1050px) {
+  .contanto-info h2 {
+    font-size: 0.875rem;
+  }
+  .contanto-info a {
+    font-size: 1.5rem;
+  }
+
+  .contanto-info p {
+    font-size: 0.875rem;
+  }
+  .contanto-info:before {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .contato-form {
+    padding: 32px 20px 0px 20px;
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  .contanto-info {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .contanto-info h2 {
+    font-size: 0.75rem;
+  }
+  .contanto-info a {
+    font-size: 1.2rem;
+  }
+
+  .contanto-info p {
+    font-size: 0.75rem;
+  }
 }
