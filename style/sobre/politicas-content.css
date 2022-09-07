@@ -102,4 +102,7 @@
   .politicas-content h2::before {
     display: none;
   }
+  .politicas.assistencia {
+    background: url("../../img/bg-assistesncia.jpg") no-repeat -200px -250px;
+  }
 }
