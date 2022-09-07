@@ -2,7 +2,6 @@
   height: 800px;
   background: url("../img/bg-intro2500.jpg") no-repeat center center;
   position: relative;
-  z-index: -1;
 }
 .intro::after {
   position: absolute;
