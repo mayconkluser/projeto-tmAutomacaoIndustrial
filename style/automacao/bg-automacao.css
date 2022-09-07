@@ -10,8 +10,38 @@
   background: url("../../img/bg-automacao2500.jpg") no-repeat;
 }
 
+.politicas.assistencia::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  top: -255px;
+  opacity: 0.4;
+  left: 10px;
+  z-index: -1;
+}
+
+.politicas.assistencia::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  top: -255px;
+  opacity: 0.4;
+  right: 10px;
+  rotate: -90deg;
+  z-index: -1;
+}
+
 @media (max-width: 769px) {
   .bg-automacao {
     background: url("../../img/bg-automacao2500.jpg") no-repeat top 0 right -1500px;
+  }
+  .politicas.assistencia::after {
+    display: none;
   }
 }

@@ -42,6 +42,7 @@ img {
   color: #f0f4f7;
   font-weight: 600;
   background: linear-gradient(180deg, #513f94 0%, #3a297b 100%);
+  cursor: pointer;
 }
 
 .btn-simples:hover {
@@ -58,6 +59,20 @@ img {
   height: 400px;
 }
 
+.bg-pages::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  bottom: 40px;
+  opacity: 0.4;
+  right: 10px;
+  z-index: -1;
+  rotate: 180deg;
+}
+
 @media (max-width: 910px) {
   .btn-simples {
     font-size: 0.875rem !important;
@@ -68,5 +83,9 @@ img {
   .bg-pages {
     font-size: 2.5rem !important;
     height: 350px !important;
+  }
+  .bg-pages::after {
+    content: "";
+    bottom: 75px;
   }
 }

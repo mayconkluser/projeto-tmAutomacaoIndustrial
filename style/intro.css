@@ -1,6 +1,21 @@
 .intro {
   height: 800px;
   background: url("../img/bg-intro2500.jpg") no-repeat center center;
+  position: relative;
+  z-index: -1;
+}
+.intro::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  bottom: -255px;
+  opacity: 0.4;
+  right: 10px;
+  z-index: -1;
+  rotate: 180deg;
 }
 
 .content-intro {

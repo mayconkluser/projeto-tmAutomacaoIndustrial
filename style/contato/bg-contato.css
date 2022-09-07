@@ -8,6 +8,33 @@
   width: 100%;
   height: 400px;
   background: url("../../img/bg-contato2500-contato.jpg") no-repeat -300px 0;
+  position: relative;
+}
+
+.bg-contato::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  background-image: url("../../img/detalhes.svg");
+  bottom: -180px;
+  opacity: 0.4;
+  z-index: -1;
+  right: 10px;
+}
+
+.footer.sobre-footer::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  top: -255px;
+  opacity: 0.4;
+  left: 10px;
+  z-index: -1;
 }
 @media (max-width: 1050px) {
   .bg-contato {

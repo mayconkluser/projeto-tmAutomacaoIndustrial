@@ -5,6 +5,19 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+}
+.contato::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("../../img/detalhes.svg");
+  top: -255px;
+  opacity: 0.4;
+  left: 10px;
+  z-index: -1;
 }
 
 .contato h3 {

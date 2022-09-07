@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   background: #161b20;
+  position: relative;
 }
 
 .footer-info {
