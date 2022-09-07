@@ -135,4 +135,7 @@ textarea:focus {
   .contanto-info p {
     font-size: 0.75rem;
   }
+  .contato-form {
+    gap: 24px;
+  }
 }
