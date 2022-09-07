@@ -119,6 +119,9 @@ textarea:focus {
   .contanto-info {
     grid-row: 1;
   }
+  .contanto-info {
+    gap: 16px;
+  }
 }
 
 @media (max-width: 500px) {
